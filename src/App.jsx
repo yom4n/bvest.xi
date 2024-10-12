@@ -8,6 +8,7 @@ import Events from "./components/Events";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Team from "./components/Team";
+import Footer from "./components/Footer"
 
 function App() {
   const router = createBrowserRouter([
@@ -18,6 +19,7 @@ function App() {
           <ReactLenis root>
             <Navbar />
             <Home />
+            <Footer/>
           </ReactLenis>
         </>
       ),
@@ -29,21 +31,12 @@ function App() {
           <ReactLenis root>
             <Navbar />
             <Events />
+            <Footer/>
           </ReactLenis>
         </>
       ),
     },
-    {
-      path: "/contact",
-      element: (
-        <>
-          <ReactLenis root>
-            <Navbar />
-            <Contact />
-          </ReactLenis>
-        </>
-      ),
-    },
+   
     {
       path: "/team",
       element: (
@@ -51,6 +44,7 @@ function App() {
           <ReactLenis root>
             <Navbar />
             <Team />
+            <Footer/>
           </ReactLenis>
         </>
       ),

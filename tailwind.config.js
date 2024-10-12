@@ -28,7 +28,7 @@ export default {
       },
       animation: {
         float: 'float 3s ease-in-out infinite',
-        spinSlow: 'spin 3s linear infinite',
+        spinSlow: 'spin 30s linear infinite',
         pulseFast: 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 
       },

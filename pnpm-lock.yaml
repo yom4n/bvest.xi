@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@eslint/js': ^9.9.0
+  '@mantine/hooks': ^7.13.2
   '@types/react': ^18.3.3
   '@types/react-dom': ^18.3.0
   '@vitejs/plugin-react': ^4.3.1
@@ -24,6 +25,7 @@ specifiers:
   vite-plugin-svgr: ^4.2.0
 
 dependencies:
+  '@mantine/hooks': 7.13.2_react@18.3.1
   framer-motion: 11.9.0_nnrd3gsncyragczmpvfhocinkq
   lenis: 1.1.13_nnrd3gsncyragczmpvfhocinkq
   lucide-react: 0.439.0_react@18.3.1
@@ -530,6 +532,14 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  /@mantine/hooks/7.13.2_react@18.3.1:
+    resolution: {integrity: sha512-NKfGl2sKZw6zF//AfAFJrVDftjg7DKCn0h8rwJBIZCKi9axhwlV0Mvlqe2dep8QuM7O/uLLJSymSKIv1gaxIJg==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      react: 18.3.1
+    dev: false
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
