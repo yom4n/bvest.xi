@@ -231,11 +231,11 @@ const Home = () => {
                   ></path>
                 </svg>
                 <p className="font-bold text-3xl sm:text-4xl lg:text-5xl leading-9 text-primary ml-2">
-                  1.5M+
+                  1,000+
                 </p>
               </div>
               <p className="font-medium text-base sm:text-lg leading-6 mt-3 md:mt-6 text-center">
-                App Downloads
+                Social Media Views
               </p>
             </div>
           </div>

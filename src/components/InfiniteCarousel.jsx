@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Icons } from "../components/Icons";
 
 const InfiniteCarousel = () => {
   const items = [
@@ -17,8 +18,8 @@ const InfiniteCarousel = () => {
 
   return (
     <div className="overflow-hidden py-20">
-      <title className="py-14 px-10 flex justify-center align-middle">
-        <img src="/Home/SPONSORS.png" alt="" className="md:w-1/3 w-2/3" />
+      <title className=" px-10 flex justify-center align-middle">
+        <Icons.Sponsors className="md:w-1/3 h-full  pb-10 mt-10 w-2/3" />{" "}
       </title>
 
       <motion.div
