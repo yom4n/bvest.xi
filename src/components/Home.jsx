@@ -267,7 +267,7 @@ const CenterImage = () => {
       style={{
         backgroundSize,
         clipPath,
-        backgroundImage: "url(../public/Home/backdrop.png)",
+        backgroundImage: "url(/Home/backdrop.png)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}

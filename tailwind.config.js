@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'parallax': 'url("./public/home-bg.png")',
-        'triangles': "url('../public/TeamCard.png')"
+        'parallax': 'url("/home-bg.png")',
+        'triangles': "url('/TeamCard.png')"
       },
       colors: {
         primary: "#86EBD9",
