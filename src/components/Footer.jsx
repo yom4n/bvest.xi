@@ -5,8 +5,8 @@ const Footer = () => {
     <footer className="h-20 bg-black flex items-center justify-between px-4 text-xs sm:text-sm md:text-base whitespace-nowrap overflow-hidden">
       <div className="flex-1 flex justify-start">
         <img src="bvest-logo.png" alt="Logo" className="md:h-10 h-4" />
-      <div className="flex-1 flex justify-center text-gray-300 truncate">
       </div>
+      <div className="flex-1 flex justify-center text-gray-300 truncate">
         <span className="truncate">
           Developed by{' '}
           <a 

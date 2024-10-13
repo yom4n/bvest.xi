@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         'parallax': 'url("/home-bg.png")',
-        'triangles': "url('/TeamCard.png')"
+        'triangles': "url('/FM/TeamCard.png')"
       },
       colors: {
         primary: "#86EBD9",

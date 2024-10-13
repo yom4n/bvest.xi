@@ -30,7 +30,7 @@ const Navbar = ({ burger = 0 }) => {
           onClick={() => !isDesktop && toggleMenu()}
           className="flex w-full items-center "
         >
-          <Icons.Logo className="w-44 h-20 ml-5" />
+          <Icons.Logo className="w-44 h-20 ml-5"/>
         </NavLink>
 
         <div className="flex z-50 items-center justify-end mx-auto mr-5 w-min md:hidden">

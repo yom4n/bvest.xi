@@ -108,6 +108,8 @@ const Events = () => {
             className="md:w-1/3 w-2/3"
           />
         </heading>
+        <Icons.Day1 className="md:w-3/12 h-full py-5 mt-10 w-2/3 z-10" />
+
         <div className="flex flex-wrap  justify-center z-0">
           {/* <div className="fixed">
             <div className="animate-float opacity-30 absolute z-[-1] w-32 right-6 top-1/12">
@@ -130,9 +132,6 @@ const Events = () => {
             </div>
           </div> */}
 
-          <heading className="md:py-10 py-10 m-5 flex justify-center align-center">
-            <img src="/Events/DAY 1.png" alt="" className="md:w-1/4 w-2/3" />
-          </heading>
 
           {day1.map((event) => (
             <div className="p-4 max-w-sm z-0">
@@ -179,9 +178,8 @@ const Events = () => {
           ))}
         </div>
 
-        <heading className="md:py-10 py-10 m-5 flex justify-center align-center">
-          <img src="/Events/DAY 2.png" alt="" className="md:w-1/4 w-2/3" />
-        </heading>
+        <Icons.Day2 className="md:w-3/12 h-full py-5 mt-10 w-7/12 z-10" />
+
 
         <div className="flex flex-wrap justify-center z-0">
           {day2.map((event) => (

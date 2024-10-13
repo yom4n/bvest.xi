@@ -7,6 +7,8 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 
+import { Icons } from "../components/Icons";
+
 import InfiniteCarousel from "./InfiniteCarousel";
 
 const SECTION_HEIGHT = 1000;
@@ -14,7 +16,7 @@ const SECTION_HEIGHT = 1000;
 const Home = () => {
   return (
     <>
-      <div className="bg-parallax w-full bg-cover -z-10">
+      <div className="bg-parallax w-full bg-cover z-100">
         <div className="flex w-screen">
           <div className="container rotate-180 absolute z-10 top-48 w-screen m-0 pr-5 flex justify-end align-center  ">
             <div className="chevron "></div>
@@ -38,10 +40,10 @@ const Home = () => {
 
           <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-950/5 to-[#011027]/80"></div>
         </div>
-        <div className="  bg-[#011027]/80">
-          <div className="flex w-vw opacity-100 p-0 m-0 right-0 justify-center items-center z-10">
+        <div className="  bg-[#011027]/80 pb-20">
+          <div className="flex w-vw opacity-100 py-10 m-0 right-0 justify-center items-center z-10">
             <a href="https://bvphex.devfolio.co/" target="_blank">
-              <img src="/Home/BVPHEX.svg" alt="" className="flex w-full " />
+              <img src="/Home/BVPHEX.svg" alt="" className="flex w-full" />
             </a>
           </div>
           <div className="flex  h-screen w-vw bg-fixed  justify-start items-center">
@@ -50,13 +52,8 @@ const Home = () => {
                 About Us
               </span> */}
 
-              <heading className="md:py-10 py-10 m-5">
-                <img
-                  src="/Home/ABOUT US.png"
-                  alt=""
-                  className="md:w-1/3 w-2/3"
-                />
-              </heading>
+              <Icons.AboutUs className="md:w-1/3 h-full py-5 mt-10 w-2/3" />
+              
 
               <motion.div
                 variants={{

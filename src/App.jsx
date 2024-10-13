@@ -1,11 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import { Icons } from "./components/Icons";
 import { ReactLenis } from "lenis/dist/lenis-react";
 
 import Home from "./components/Home";
 import Events from "./components/Events";
-import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Team from "./components/Team";
 import Footer from "./components/Footer"
