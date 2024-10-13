@@ -41,7 +41,7 @@ const Home = () => {
         <div className="  bg-[#011027]/80">
           <div className="flex w-vw opacity-100 p-0 m-0 right-0 justify-center items-center z-10">
             <a href="https://bvphex.devfolio.co/" target="_blank">
-              <img src="/Home/BVPHEX.png" alt="" className="flex w-full " />
+              <img src="/Home/BVPHEX.svg" alt="" className="flex w-full " />
             </a>
           </div>
           <div className="flex  h-screen w-vw bg-fixed  justify-start items-center">
