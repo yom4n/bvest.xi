@@ -280,7 +280,7 @@ const Portal = () => {
 
   return (
     <motion.div
-      className="flex justify-center align-middle fixed w-screen pt-44 -z-8"
+      className="flex justify-center align-middle fixed w-screen md:pt-44 pt-60 -z-8"
       style={{ opacity: opacity }}
     >
       <img
