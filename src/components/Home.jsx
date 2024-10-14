@@ -6,6 +6,7 @@ import {
   useMotionTemplate,
   useMotionValueEvent,
 } from "framer-motion";
+import { useMediaQuery } from '@mantine/hooks';
 
 import { Icons } from "../components/Icons";
 
@@ -30,7 +31,7 @@ const Home = () => {
           </div>
         </div>
         <div
-          className="w-full relative "
+          className="w-full relative py-0 "
           style={{ height: `calc(${SECTION_HEIGHT}px + 120vh)` }}
         >
           <Portal />
@@ -40,8 +41,8 @@ const Home = () => {
 
           <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-950/5 to-[#011027]/80"></div>
         </div>
-        <div className="  bg-[#011027]/80 pb-20">
-          <div className="flex w-vw opacity-100 py-10 m-0 right-0 justify-center items-center z-10">
+        <div className="  bg-[#011027]/80  pb-20">
+          <div className="flex w-vw opacity-100 py-10 m-0 right-0 justify-center align-middle items-center h-screen z-10">
             <a href="https://bvphex.devfolio.co/" target="_blank">
               <img src="/Home/BVPHEX.svg" alt="" className="flex w-full" />
             </a>
@@ -248,6 +249,8 @@ const Home = () => {
 };
 
 const CenterImage = () => {
+  const isDesktop = useMediaQuery('(min-width: 768px)');
+
   const { scrollY } = useScroll();
   const backgroundSize = useTransform(
     scrollY,
@@ -258,7 +261,7 @@ const CenterImage = () => {
   const clip2 = useTransform(scrollY, [0, SECTION_HEIGHT], [50, 100]);
 
   const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`;
-  return (
+  return ( (isDesktop ?
     <motion.div
       className="sticky top-0 h-screen w-10/12 mx-auto"
       style={{
@@ -268,7 +271,16 @@ const CenterImage = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-    />
+    /> : <motion.div
+    className="sticky top-0 h-screen w-10/12  mx-auto"
+    style={{
+      backgroundSize,
+      clipPath,
+      backgroundImage: "url(/Home/BVEST.XI.png)",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}
+  />)
   );
 };
 
